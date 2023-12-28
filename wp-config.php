@@ -11,3 +11,9 @@ define('DISALLOW_FILE_MODS', true);
 
 // Allowed file types for uploads
 define('ALLOW_UNFILTERED_UPLOADS', false);
+
+// Disable debugging in production
+define('WP_DEBUG', false);
+
+// Set memory limit
+define('WP_MEMORY_LIMIT', '256M'); 
