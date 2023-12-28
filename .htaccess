@@ -1,3 +1,58 @@
+# Limit Access to wp-admin Directory:
+# Place the following code in your .htaccess file to restrict access to the wp-admin directory by allowing only specific IP addresses to access it:
+
+<Files wp-login.php>
+Order deny,allow
+Deny from all
+Allow from xx.xx.xx.xx  # Replace xx.xx.xx.xx with your IP address
+</Files>
+
+# Prevent Directory Browsing:
+# Disable directory browsing to prevent hackers from viewing the contents of your directories. Add this line to your .htaccess file:
+
+Options -Indexes
+
+# Protect .htaccess File:
+# Safeguard your .htaccess file itself from unauthorized access:
+
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Block Suspicious IP Addresses:
+# Block suspicious IP addresses or entire IP ranges known for malicious activities using the following code:
+
+# Block IP address
+Deny from 123.456.789.10
+
+# Block IP range
+Deny from 123.456.789.0/24
+
+# Prevent PHP Execution in Certain Directories:
+# To prevent PHP execution in directories where it's not required (e.g., uploads folder), use this:
+
+<Files *.php>
+Deny from all
+</Files>
+
+# Force HTTPS:
+# Ensure your website uses HTTPS by redirecting HTTP to HTTPS:
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Protecting wp-config.php:
+# Secure the wp-config.php file (WordPress configuration file) by restricting access to it:
+
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+# Security Headers
+
 <IfModule mod_headers.c>
     #Header set Content-Security-Policy "default-src 'self';"
     Header always set X-Content-Type-Options "nosniff"
