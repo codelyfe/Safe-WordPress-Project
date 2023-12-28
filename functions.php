@@ -29,3 +29,9 @@ add_action('template_redirect', 'force_https');
 
 // Disable XMLRPC
 add_filter('xmlrpc_enabled', '__return_false');
+
+// Change Login URL
+function change_login_url() {
+    return home_url('my-custom-login-url');
+}
+add_filter('login_url', 'change_login_url');
