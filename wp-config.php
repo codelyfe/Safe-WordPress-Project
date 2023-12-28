@@ -1,3 +1,4 @@
+<?php
 // Enable SSL
 define('FORCE_SSL_ADMIN', true);
 define('FORCE_SSL_LOGIN', true);
