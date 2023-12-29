@@ -7,6 +7,10 @@ More info coming soon!
 # wp-config.php
 More info coming soon!
 
+# /wp-content/
+1. /uploads/ - Added .htaccess
+2. /plugins/ - Custom Plugins
+
 # Other Tips
 1. Change passwords often.
 2. Backup File Directory and Database everytime you make major changes.
