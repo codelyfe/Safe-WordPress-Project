@@ -2,7 +2,14 @@
 How can we build a safer WordPress for everyone?
 
 # .htaccess
-More info coming soon!
+1. Limit Access to wp-admin Directory
+2. Prevent Directory Browsing
+3. Protect .htaccess File
+4. Block Suspicious IP Addresses
+5. Prevent PHP Execution in Certain Directories
+6. Force HTTP
+7. Protecting wp-config.php
+8. Security Headers
 
 # wp-config.php
 Safely configure your /wp-config.php file using the methods provided. ( May need to edit the configurations to work with your WordPress website. )
