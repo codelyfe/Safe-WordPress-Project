@@ -5,7 +5,7 @@ How can we build a safer WordPress for everyone?
 More info coming soon!
 
 # wp-config.php
-More info coming soon!
+Safely configure your /wp-config.php file using the methods provided. ( May need to edit the configurations to work with your WordPress website. )
 
 # /wp-content/
 1. /uploads/ - Added .htaccess
