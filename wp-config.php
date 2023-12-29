@@ -75,3 +75,8 @@ add_filter('rest_authentication_errors', function( $result ) {
         }
         return $result;
 });
+
+// Enable Server-side compression 
+define('COMPRESS_CSS', true);
+define('COMPRESS_SCRIPTS', true);
+define('ENFORCE_GZIP', true);
