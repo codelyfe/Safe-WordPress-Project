@@ -53,4 +53,14 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_filter('the_content_feed', 'wp_staticize_emoji');
 remove_filter('comment_text_rss', 'wp_staticize_emoji');
 
+// Debug Info for Admin Only
+if ( isset( $_GET['debug'] ) && $_GET['debug'] == 'true' ) {
+    define('WP_DEBUG', true);
+    define('WP_DEBUG_DISPLAY', false);
+    define('WP_DEBUG_LOG', false);
+    define('SCRIPT_DEBUG', false);
+    define('CONCATENATE_SCRIPTS', false);
+    define('SAVEQUERIES', false);
+}
+
 
