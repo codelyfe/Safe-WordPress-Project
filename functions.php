@@ -35,3 +35,17 @@ function change_login_url() {
     return home_url('my-custom-login-url');
 }
 add_filter('login_url', 'change_login_url');
+
+// Prevent direct access to certain file types
+function restrict_file_access() {
+    $restricted_files = array('.exe', '.dll', '.bat'); // Add file extensions you want to restrict
+    $current_uri = $_SERVER['REQUEST_URI'];
+
+    foreach ($restricted_files as $file) {
+        if (strpos($current_uri, $file) !== false) {
+            header('HTTP/1.0 403 Forbidden');
+            exit;
+        }
+    }
+}
+add_action('init', 'restrict_file_access');
