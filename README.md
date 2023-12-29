@@ -1,4 +1,4 @@
-# Safe-WordPress-Project
+# Safe-WordPress-Project ( Guide )
 How can we build a safer WordPress for everyone?
 
 # .htaccess
