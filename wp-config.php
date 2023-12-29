@@ -63,4 +63,15 @@ if ( isset( $_GET['debug'] ) && $_GET['debug'] == 'true' ) {
     define('SAVEQUERIES', false);
 }
 
+// Enable Cross-Origin Resource Sharing (CORS):
+header("Access-Control-Allow-Origin: https://example.com");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 
+
+// Disable WordPress REST API for Unauthenticated Users:
+add_filter('rest_authentication_errors', function( $result ) {
+    if ( ! is_user_logged_in() ) {
+        return new WP_Error( 'rest_disabled', __('The REST API on this site is disabled.'), array('status' => rest_authorization_required_code()) );
+        }
+        return $result;
+});
