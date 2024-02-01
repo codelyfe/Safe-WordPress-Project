@@ -25,3 +25,6 @@ Safely configure your /wp-config.php file using the methods provided. ( May need
 # Recommended Plugins
 1. WordFence - FREE VERSION - https://www.wordfence.com/products/wordfence-free/
 2. Patchstack - FREE VERSION - https://wordpress.org/plugins/patchstack/
+
+# Helpful Links
+1. https://wordpress.org/documentation/article/faq-my-site-was-hacked/
