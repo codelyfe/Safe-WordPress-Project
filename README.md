@@ -28,3 +28,7 @@ Safely configure your /wp-config.php file using the methods provided. ( May need
 
 # Helpful Links
 1. https://wordpress.org/documentation/article/faq-my-site-was-hacked/
+
+
+# Suspicious Files
+1. th3_alpha.php - https://wordpress.org/support/topic/suspected-malware-attack/
