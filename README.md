@@ -27,7 +27,9 @@ Safely configure your /wp-config.php file using the methods provided. ( May need
 2. Patchstack - FREE VERSION - https://wordpress.org/plugins/patchstack/
 
 # Helpful Links
-1. https://wordpress.org/documentation/article/faq-my-site-was-hacked/
+1. FAQ - My Site Was Hacked - https://wordpress.org/documentation/article/faq-my-site-was-hacked/
+2. Salt Shaker - https://api.wordpress.org/secret-key/1.1/salt/
+3. WordPress XML-RPC Validation Service - https://xmlrpc-check.hostpress.me/
 
 
 # Suspicious Files
