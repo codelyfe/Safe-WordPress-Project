@@ -35,6 +35,7 @@ Safely configure your /wp-config.php file using the methods provided. ( May need
 # Suspicious Files
 1. th3_alpha.php - https://wordpress.org/support/topic/suspected-malware-attack/
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
  
 # Manually backing up a WordPress site involves exporting your database and saving your website files. Here's a step-by-step guide on how to do this:
 
