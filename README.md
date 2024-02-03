@@ -76,7 +76,8 @@ If you have custom themes or plugins, you may want to back up their directories 
 Uploads Folder:
 
 If your uploads (images, videos, etc.) are stored in the wp-content/uploads folder, you might want to back up this directory as well.
-Important Notes:
+
+## Important Notes:
 
 Save your backup files in a secure location.
 
